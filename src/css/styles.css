@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(24, 61, 61);
+    margin: 0;
+    color: rgb(147, 177, 166);
+}
+
+.nav {
+    background-color: rgb(4, 13, 18);
+    color: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    height: 30px;
+}
+
+.nav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+ul.movieslist {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style-type: none;
+    padding: 0;
+    place-items: center;
+}
+
+li.movieelement {
+    display: grid;
+    background-color: rgb(6, 34, 39);
+    width: 250px;
+    height: 400px;
+    margin-bottom: 20px;
+    place-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+img {
+    width: 200px;
+    height: 300px;
+}
+
+.nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-title {
+    font-size: 25px;
+}
+
+.searchedmovies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchedmovies input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(147, 177, 166);
+    color: rgb(147, 177, 166);
+    padding: 10px 0;
+    box-sizing: border-box;
+    outline: none;
+    height: 30px;
+    width: 500px;
+    text-align: center;
+    align-items: center;
+}
+
+.searchedmovies input::placeholder {
+    color: #888;
+}
+
+.searchedmovies ul {
+    position: absolute;
+    display: block;
+    padding-top: 30px;
+    width: 500px;
+}
+
+.dropdownmovies li {
+    display: block;
+    padding: 10px;
+    padding-top: 20px;
+    background-color: black;
+    font-size: 15px;
+    text-align: left;
+}
+
+.dropdownmovies img {
+    padding: 0;
+    margin: 0;
+    float: right;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.closebutton {
+    float: right;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.heart{
+    float: left;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.movieicons {
+    display: flex;
+    gap: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
